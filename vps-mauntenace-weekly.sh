@@ -44,6 +44,7 @@ if [[ "$CURRENT_TZ" != "$DESIRED_TZ" ]]; then
     
     if [[ "$NEW_TZ" == "$DESIRED_TZ" ]]; then
         log "时区已成功设置为 $DESIRED_TZ"
+        apt-get install hwclock
         hwclock --systohc  # 同步硬件时钟
     else
         log "错误：时区设置失败！" >&2
