@@ -7,7 +7,7 @@ weekly change timezone to asia/shang and update system and reboot every weekly
 
 bash
 
-sudo curl -o /usr/local/bin/server-maintenance.sh https://example.com/script.sh
+sudo curl -o /usr/local/bin/server-maintenance.sh https://raw.githubusercontent.com/rbobowang/cron-update-reboot/refs/heads/main/vps-mauntenace-weekly.sh
 
 sudo chmod +x /usr/local/bin/server-maintenance.sh
 
